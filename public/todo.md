@@ -4,31 +4,14 @@ vermaland doesn't fit because it takes you out of the narrative of the record. t
 
 tape with noah should be for the first 5 songs in los angeles ends. side a ttw through almost right. side b freeway ambients with full samples and vermaland. no blue. small run tape only.
 
-1. ttw
-2. lae
-3. hov
-4. horizon
-5. almost right
-
-b side
-6. freeway i [with vin]
-7. freeway ii
-8. vermaland
-
-POST SONG LINKS TO SOCIAL AS A WAY OF DRUMMING UP SHOW MOMENTUM! this is the best foot forward digitally, finally on the level of the live show. FUCK YA.
-
-2. background photo collages
-3. theming
-4. have next song play at finish
-5. media controller
+- hov essay format
+- media controller
+- phone check
 6. video + format double-checks, load testing
 7. front page copy + design
-8. timeouts to set volume of songs before pause
-9. format essay for hov
-make iframe not capture keyboard??
+- timeouts to set volume of songs before pause
 
 re-do youtube embeds as webm
-
 
 then
 10. interruptions — commercials etc that pause the music
