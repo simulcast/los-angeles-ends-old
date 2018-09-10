@@ -1,0 +1,123 @@
+h1 {
+	font-family: "Futura";
+	text-align: center;
+}
+
+a {
+	font-weight: bold !important;
+	color: white !important;
+	text-decoration: none !important;
+}
+
+/* google maps shit */
+.gm-iv-address {
+	display: none !important;
+}
+
+/* nav bar colors */
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+	background: #fff !important;
+}
+
+.imagebox {
+	position: relative;
+	padding-left:25vw;
+	padding-right: 25vw;
+	z-index: 9; /* image to the top over bg video */
+}
+
+.videobox {
+    position: relative;
+    -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
+    -moz-box-sizing: border-box; /* <=28 */
+    box-sizing: border-box;
+    z-index: -20;
+}
+
+.section {
+	font-family: "Futura";
+	background-size: cover;
+	overflow: hidden; /* clip off video overflow in chrome */
+}
+
+.slide {
+	background-size: cover;
+}
+
+.lyrics {
+	font-size: 1.5em;
+	line-height: .5em;
+	padding-left: 25vw;
+	color: white;
+}
+/* through the windshield */
+#section1 {
+	/*background-image: url(image/ttw-background.png); */
+	background-color:black;
+}
+
+#section2 {
+	background-color: skyblue;
+}
+
+#section3 {
+	background-color: rgb(252,183,46);
+}
+
+#colorado-river {
+	background-image: url(image/vermaland-colorado.png);\
+	background-size: cover;
+}
+
+.essay {
+	color: white;
+	font-size: 1.5em;
+	padding-left: 25vw;
+	padding-right: 25vw;
+	overflow: wrap;
+	z-index: 9 !important;
+	/*background-color:rgba(72,111,255,0.3);*/
+}
+
+.home {
+	font-size: 2em;
+	padding-left: 12.5vw;
+	padding-right: 12.5vw;
+	color: white;
+	top: 20vh;
+}
+
+.bgvideo {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top:0;
+	right:0;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	background-color: white; /* in case the video doesn't fit the whole page*/
+	background-image: /* our video */;
+	background-position: center center;
+	background-size: contain;
+	object-fit: cover; /*cover video background */
+	z-index: 3;
+	overflow: hidden;
+}
+
+.layer {
+	position: absolute;
+	z-index: 4;
+	width: 100%;
+	/*
+	* Preventing flicker on some browsers
+	* See http://stackoverflow.com/a/36671466/1081396  or issue #183
+	*/
+	-webkit-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+video::-webkit-media-controls {
+	display:none !important;
+}
