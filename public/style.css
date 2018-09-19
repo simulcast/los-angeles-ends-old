@@ -34,7 +34,7 @@ and (max-device-width : 667px) {
 		font-size: .75em !important;
 	}
 	.home {
-		font-size: 1em !important;
+		font-size: .75em !important;
 	}
 	.bgvideo {
 		display: none;
@@ -62,7 +62,7 @@ and (-webkit-device-pixel-ratio : 3) {
 		font-size: .75em !important;
 	}
 	.home {
-		font-size: 1em !important;
+		font-size: .75em !important;
 	}
 	.bgvideo {
 		display: none;
