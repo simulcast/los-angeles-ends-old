@@ -9,6 +9,10 @@ a {
 	text-decoration: none !important;
 }
 
+#mobileflag {
+	display: none;
+}
+
 /* google maps shit */
 .gm-iv-address {
 	display: none !important;
@@ -41,6 +45,9 @@ and (max-device-width : 667px) {
 	.fp-controlArrow.fp-prev {
 		border-width: 20px 20px 20px 0 !important;
 	}
+	#mobileflag {
+		display: inline;
+	}
 }
 
 /* iphone x styles */
@@ -65,6 +72,9 @@ and (-webkit-device-pixel-ratio : 3) {
 	}
 	.fp-controlArrow.fp-prev {
 		border-width: 20px 20px 20px 0 !important;
+	}
+	#mobileflag {
+		display: inline;
 	}
 }
 
