@@ -259,19 +259,10 @@
 		playlist[5] = player;
 	});
 	//hack for mobile
-	SC.stream('/tracks/270504683').then(function(data) {
-	initial_track = data;
-		$('body').on('touchstart', function() {
-		    if (!global.currentSoundObject) {
-		    // global.currentSoundObject is set when a song is played
-		    initial_track.play();
-		    }
-		});
-		$('body').on('touchend', function() {
-		    if (!global.currentSoundObject) {
-		        initial_track.pause();
-		    }
-		});
+	SC.stream('/tracks/270504683').then((track) => {
+	  $('body')
+	    .one('touchstart', () => track.play())
+	    .one('touchend', () => track.pause());
 	});
 </script>
 <script>
