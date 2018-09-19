@@ -19,6 +19,55 @@ a {
 	background: #fff !important;
 }
 
+/* iphone 6/7/8 styles */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+	.lyrics {
+		font-size: .75em !important;
+	}
+	.essay {
+		font-size: .75em !important;
+	}
+	.home {
+		font-size: 1em !important;
+	}
+	.bgvideo {
+		display: none;
+	}
+	.fp-controlArrow.fp-next {
+		border-width: 20px 0 20px 20px !important;
+	}
+	.fp-controlArrow.fp-prev {
+		border-width: 20px 20px 20px 0 !important;
+	}
+}
+
+/* iphone x styles */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) {
+	.lyrics {
+	font-size: .75em !important;
+	}
+	.essay {
+		font-size: .75em !important;
+	}
+	.home {
+		font-size: 1em !important;
+	}
+	.bgvideo {
+		display: none;
+	}
+	.fp-controlArrow.fp-next {
+		border-width: 20px 0 20px 20px !important;
+	}
+	.fp-controlArrow.fp-prev {
+		border-width: 20px 20px 20px 0 !important;
+	}
+}
+
 .imagebox {
 	position: relative;
 	padding-left:25vw;
@@ -49,6 +98,10 @@ a {
 	line-height: .5em;
 	padding-left: 25vw;
 	color: white;
+}
+/* home */
+#section0 {
+	background-color: black;
 }
 /* through the windshield */
 #section1 {
