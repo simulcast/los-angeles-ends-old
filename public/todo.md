@@ -4,17 +4,11 @@ vermaland doesn't fit because it takes you out of the narrative of the record. t
 
 tape with noah should be for the first 5 songs in los angeles ends. side a ttw through almost right. side b freeway ambients with full samples and vermaland. no blue. small run tape only.
 
-- hov essay format
-- media controller
-- phone check
-6. video + format double-checks, load testing
-7. front page copy + design
+soundcloud on mobile
+all videos as html5
+figure out autoplay on mobile
+horizontal mobile orientation bug testing
 - timeouts to set volume of songs before pause
-
-re-do youtube embeds as webm
-
-then
-10. interruptions — commercials etc that pause the music
 
 #website to-do [next] 
 7. ambient pieces w/ soundboards
