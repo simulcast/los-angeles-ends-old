@@ -9,8 +9,8 @@
 	<meta name="description" content="fullPage very simple demo." />
 	<meta name="keywords"  content="fullpage,jquery,demo,simple" />
 	<meta name="Resource-type" content="Document" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 	-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="stylesheet" type="text/css" href="../fullpage/fullpage.min.css" />
 </head>
@@ -18,21 +18,24 @@
 <div id="fullpage">
 	<!--home page-->
 	<div class="section active" id="section0">
-		<video class="bgvideo" data-autoplay playsinline loop muted>
+		<!--
+		<video class="bgvideo" autoplay playsinline loop muted>
 			<source data-src="video/home.m4v" type="video/mp4">
+			<img data-src="image/hov-logotype.png">
 		</video>
-		<div class="layer home">
+		-->
+		<div class="slide layer home">
 			<p><h2>Los Angeles Ends</h2> by <a href="http://instagram.com/thisissimulcast" target="_blank">Simulcast</a></p>
 			<br>
 			<p>a record of grief, freeways, and returning home.</p>
-			<p><small>swipe up and down to navigate between songs, left and right to dive in.</small></p>
+			<p><small>use the arrow keys to navigate —— up and down to move between songs, left and right to dive in.</small></p>
 			<p><span id="mobileflag"><small>view on desktop for a fuller experience</small></span></p>
 		</div>
 	</div>
 	<!--through the windshield-->
 	<div class="section" id="section1">
 	    <div class="slide">
-	    	<h1>Through the Windshield</h1>
+	    	<h1>1. Through the Windshield</h1>
 	    </div>
 	    <div class="slide">
 	    	<div class="lyrics">
@@ -88,7 +91,7 @@
 	<!--los angeles ends-->
 	<div class="section" id="section2">
 		<div class="slide">
-			<h1>Los Angeles Ends</h1>
+			<h1>2. Los Angeles Ends</h1>
 		</div>
 		<div class="slide">
 			<div class="lyrics">
@@ -131,7 +134,7 @@
 			</div>
 		</div>
 		<div class="slide">
-			<iframe data-autoplay width="100%" height="100%" src="https://www.youtube.com/embed/YKKyDqaM_xI?&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;disablekb=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<iframe data-autoplay data-keepplaying width="100%" height="100%" src="https://www.youtube.com/embed/YKKyDqaM_xI?&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;disablekb=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		</div>
 		<div class="slide">
 			<div class="essay">
@@ -145,7 +148,7 @@
     <!--high occupancy vehicle-->
     <div class="section" id="section3">
 		<div class="slide">
-			<h1>High Occupancy Vehicle</h1>
+			<h1>3. High Occupancy Vehicle</h1>
 		</div>
 		<div class="slide">
 			<div class="lyrics">
@@ -260,17 +263,23 @@
 	    .one('touchstart', () => track.play())
 	    .one('touchend', () => track.pause());
 	});
+	function fallback(video)
+	{
+	  var img = video.querySelector('img');
+	  if (img)
+	    video.parentNode.replaceChild(img, video);
+	}
 </script>
 <script>
 	/* fullpage.js config */
 	var myFullpage = new fullpage('#fullpage', {
-		anchors: ['home','windshield', 'losangelesends', 'hov'],
+		anchors: ['home','windshield', 'losangelesends', 'hov', 'share'],
 		navigation: false,
 		slidesNavigation: true,
 		slidesNavPosition: 'bottom',
 		scollBar: true,
 		keyboardScrolling: true,
-		controlArrows: true,
+		controlArrows: false,
 		lazyLoading: true,
 		licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
 		onLeave: function(origin, destination, direction){

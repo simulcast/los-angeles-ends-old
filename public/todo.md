@@ -7,8 +7,10 @@ tape with noah should be for the first 5 songs in los angeles ends. side a ttw t
 soundcloud on mobile
 all videos as html5
 figure out autoplay on mobile
-horizontal mobile orientation bug testing
-- timeouts to set volume of songs before pause
+try out loading images w/ lazy loading
+horizontal mobile orientation bug testing -- or hiding things
+timeouts to set volume of songs before pause
+add end page with links etc – something needs to happen when you get to the end
 
 #website to-do [next] 
 7. ambient pieces w/ soundboards
